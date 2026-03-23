@@ -33,6 +33,10 @@ body{
     color: white;
 }
 
+.modal-body img {
+    width: 100%;
+}
+
 .bg-light {
     background-color: red;
 }
