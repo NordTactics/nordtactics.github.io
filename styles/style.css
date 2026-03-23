@@ -1,33 +1,86 @@
-body {
-    padding-top: 6rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cabin:ital,wght@0,400..700;1,400..700&family=Parisienne&display=swap');
+
+:root {
+    --bg-color: #1F2621;
+    --text-color: #F1F2F2;
+    --h-color1: #8C6F3A;
+    --h-color2: #6A732C;
+    --h-color3: #A65E44;
+}
+/* 
+#F1F2F2 - marble
+#1F2621 - slate
+#8C6F3A - lichen green
+#6A732C - lichen amber
+#A65E44 - lichen red 
+*/
+
+/* Hero Section */
+body{
+    background-color: var(--text-color);
+    color: var(--text-color);
+
+}
+.hero-section {
+    background: url(../images/orangecat.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-h1 {
-    font-size: 2.5rem;
+.bg-light {
+    background-color: red;
 }
 
-div.row {
-    background: var(--bs-primary-bg-subtle);
-    margin-bottom: 1em;
+.hero-section h1 {
+    font-family: 'Black Ops One', serif;
 }
 
-h3 {
-    margin-top: 25vh;
+h2, h3, h4, h5 {
+    font-family: 'Black Ops One', serif;
+
+}
+.hero-section .lead {
+    font-size: 1.5rem;
 }
 
-div.row div {
-    padding: 5px;
-    border: 1px solid var(--bs-tertiary-color);
+.work-card img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    
 }
 
-p {
-    font-size: 1.25rem;
+.work-card {
+    font-family: 'Cabin', sans-serif;
+    background-color: var(--bg-color);
+    border-radius: 0em;
+    color: var(--text-color);
+    border: none;
+
 }
 
-ul {
-    font-size: 1.25rem;
+.card-title {
+    color: var(--text-color);
+    font-size: 1.5em;
 }
 
-ul li {
-    margin-bottom: 1rem;
+h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+.btn {
+    background-color: var(--h-color1);
+    color: var(--text-color);
+    border-radius: 0em;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    --bs-btn-hover-bg: var(--h-color2);
 }
