@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cabin:ital,wght@0,400..700;1,400..700&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
     --bg-color: #1F2621;
@@ -7,6 +8,8 @@
     --h-color1: #8C6F3A;
     --h-color2: #6A732C;
     --h-color3: #A65E44;
+    --bg-color2: #38401A;
+    --bg-color3: #4D5920;
 }
 /* 
 #F1F2F2 - marble
@@ -14,16 +17,22 @@
 #8C6F3A - lichen green
 #6A732C - lichen amber
 #A65E44 - lichen red 
+#38401A - moss green
 */
 
 /* Hero Section */
 body{
-    background-color: var(--text-color);
+    background-color: var(--bg-color2);
     color: var(--text-color);
+    background: url(../images/BGWorld.png);
+    background-size: cover;
+    background-position: top center;
+    background-attachment:fixed;
 
+    
 }
 .hero-section {
-    background: url(../images/orangecat.webp);
+    background: url(../images/nordic.png);
     background-size: cover;
     background-position: 50% 50%;
     height: 100vh;
@@ -31,6 +40,21 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
+    
+}
+
+.carousel-control-prev {
+    background-color:#8C6F3A
+}
+
+.carousel-control-next {
+    background-color:#8C6F3A
+}
+
+.carousel-inner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .modal-body img {
@@ -42,11 +66,11 @@ body{
 }
 
 .hero-section h1 {
-    font-family: 'Black Ops One', serif;
+    font-family: 'Play', serif;
 }
 
 h2, h3, h4, h5 {
-    font-family: 'Black Ops One', serif;
+    font-family: 'Play', serif;
 
 }
 .hero-section .lead {
@@ -63,6 +87,7 @@ h2, h3, h4, h5 {
 .work-card {
     font-family: 'Cabin', sans-serif;
     background-color: var(--bg-color);
+    opacity: 0.75;
     border-radius: 0em;
     color: var(--text-color);
     border: none;
@@ -76,7 +101,7 @@ h2, h3, h4, h5 {
 
 h2 {
     font-weight: 700;
-    color: #333;
+    color: var(--text-color);
 }
 
 .btn {
