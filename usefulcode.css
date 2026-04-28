@@ -1,0 +1,31 @@
+	<section class="carousel py-5">
+			<div class="container">
+				<h2 class="text-center mb-5">hi there this is my carousel</h2>
+				
+				<div id="catCarousel" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WcFWVOX9ofk?si=j7NJPGKdG7xYlM5q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>							<p>Hello there</p>
+						</div>
+						<div class="carousel-item">
+							<img src="images/">
+						</div>
+						<div class="carousel-item">
+                            <img src="images/">						
+                        </div>
+						<div class="carousel-item">
+                            <img src="images/">						
+                        </div>
+						<div class="carousel-item">
+							<img src="images/orangecat.webp">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#catCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#catCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</section>

@@ -4,11 +4,11 @@
 
 :root {
     --bg-color: #1F2621;
+    --bg-color2: #344039;
     --text-color: #F1F2F2;
     --h-color1: #8C6F3A;
     --h-color2: #6A732C;
     --h-color3: #A65E44;
-    --bg-color2: #38401A;
     --bg-color3: #4D5920;
 }
 /* 
@@ -41,20 +41,6 @@ body{
     justify-content: center;
     color: white;
     
-}
-
-.carousel-control-prev {
-    background-color:#8C6F3A
-}
-
-.carousel-control-next {
-    background-color:#8C6F3A
-}
-
-.carousel-inner img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
 }
 
 .modal-body img {
@@ -121,20 +107,39 @@ nav.navbar {
     opacity: 0.9;
     border-radius: 0em;
     border: none;
+    
 }
 
 .navbar {
     --bs-navbar-color: var(--text-color);
-    ;
+    --bs-navbar-hover-color: var(--h-color3);
     font-family: 'Play', sans-serif;
     --bs-navbar-padding-y: 0rem;
     font-size: x-large;
 }
 
+.navbar .nav-link {
+    padding: 0.1em;
+    border-radius: 0.3em;
+    background-color: var(--bg-color2);
+    margin-right: 0.1em;
+    margin-left: 0.1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.navbar .nav-link:hover {
+}
+
+.container-fluid {
+    padding-right: 0em;
+    padding-left: 0em;
+}
 #colorbar {
-  background-image: url("images/colorbar.webp");
+  display: block;
   width: 100%;
     height: 0.7em;
+
 }
 
 .thin {
@@ -142,5 +147,26 @@ nav.navbar {
     margin: 0;
     padding: 0;
     height: 0.7em;
+
+}
+
+#herologo {
+    width: 65vw; 
+  height: auto; 
+}
+
+/* Carousel */
+
+.carouselheadervideo iframe {
+    width: 100%;
+    Height: 100%;
+    display: block;
+}
+
+.carouselheadervideo {
+    width: 60vw;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    margin-bottom: 3em;
 
 }
