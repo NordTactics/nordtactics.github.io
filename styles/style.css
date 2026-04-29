@@ -131,6 +131,16 @@ nav.navbar {
 .navbar .nav-link:hover {
 }
 
+.selected {
+    font-weight:600;
+    text-decoration:underline ;
+    outline: 0.15em solid var(--h-color3);
+    outline-offset: -0.15em;
+    border-radius: inherit;
+    display: block;
+    background-color: var(--h-color3) !important;
+}
+
 .container-fluid {
     padding-right: 0em;
     padding-left: 0em;
@@ -169,4 +179,25 @@ nav.navbar {
     margin: 0 auto;
     margin-bottom: 3em;
 
+}
+
+/*footer*/
+
+.footernordic {
+    background: url(../images/nordic.webp);
+    background-size: cover;
+    background-position: 50% 90%;
+    height: 25vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contactbutton {
+    padding: 0.1em;
+    border-radius: 0.5em;
+    background-color: var(--bg-color2);
+    text-align: center;
+    margin:4em;
 }
