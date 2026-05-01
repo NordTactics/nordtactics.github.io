@@ -57,6 +57,7 @@ body{
 
 h2, h3, h4, h5 {
     font-family: 'Play', serif;
+    display:inline;
 
 }
 .hero-section .lead {
@@ -102,6 +103,18 @@ h2 {
 
 /* NAVBAR */
 
+.selected {
+    font-weight:600;
+    text-decoration:underline ;
+    outline: 0.15em solid var(--h-color3);
+    outline-offset: -0.15em;
+    border-radius: inherit;
+    display: block;
+    background-color: var(--h-color3) !important;
+    --bs-navbar-hover-color: var(--text-color) !important;
+
+}
+
 nav.navbar {
     background-color: var(--bg-color);
     opacity: 0.9;
@@ -112,7 +125,7 @@ nav.navbar {
 
 .navbar {
     --bs-navbar-color: var(--text-color);
-    --bs-navbar-hover-color: var(--h-color3);
+    --bs-navbar-hover-color: var(--h-color1);
     font-family: 'Play', sans-serif;
     --bs-navbar-padding-y: 0rem;
     font-size: x-large;
@@ -131,15 +144,7 @@ nav.navbar {
 .navbar .nav-link:hover {
 }
 
-.selected {
-    font-weight:600;
-    text-decoration:underline ;
-    outline: 0.15em solid var(--h-color3);
-    outline-offset: -0.15em;
-    border-radius: inherit;
-    display: block;
-    background-color: var(--h-color3) !important;
-}
+
 
 .container-fluid {
     padding-right: 0em;
@@ -200,4 +205,20 @@ nav.navbar {
     background-color: var(--bg-color2);
     text-align: center;
     margin:4em;
+}
+
+/*icon*/
+
+.icon {
+  width: 2em;    
+  height: 2em;      
+  vertical-align: top; 
+  fill: #8C6F3A;  
+  filter:invert(100%);
+  margin-right: 0.3em;
+  margin-top: 0.3em;
+}
+
+.icontext {
+  font-size: 24px;  
 }
