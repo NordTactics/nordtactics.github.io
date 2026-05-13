@@ -137,6 +137,7 @@ nav.navbar {
     font-family: 'Play', sans-serif;
     --bs-navbar-padding-y: 0rem;
     font-size: x-large;
+    white-space: nowrap;
 }
 
 .navbar .nav-link {
@@ -147,6 +148,7 @@ nav.navbar {
     margin-left: 0.1em;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
+    white-space: nowrap;
 }
 
 .navbar .nav-link:hover {
@@ -155,7 +157,9 @@ nav.navbar {
     transition: all 0.2s ease;
 }
 
-
+.custom-toggler.navbar-toggler {
+           border-color: var(--h-color1);
+       }
 
 .container-fluid {
     padding-right: 0em;
@@ -225,7 +229,7 @@ nav.navbar {
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     background-color: var(--bg-color2);
-    text-align: center;
+    text-align: left;
 }
 
 /*icon*/
@@ -248,7 +252,7 @@ nav.navbar {
     /* filter:invert(100%); */
     cursor: pointer;
     padding: 0.1em;
-    fill: white;
+    fill: var(--text-color);
 }
 
 .footer-link {
@@ -275,3 +279,4 @@ nav.navbar {
 footer div.row {
     width: 100%;
 }
+
