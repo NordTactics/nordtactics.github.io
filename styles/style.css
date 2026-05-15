@@ -111,8 +111,22 @@ h2, h3, h4, h5 {
 
 }
 
+a {
+    color: var(--h-color1)
+}
+
+a:hover {
+    color: var(--h-color2);
+    transition: all 0.2s ease;
+
+}
+
 .headingspacer {
     margin-top: 1em;
+}
+
+.bottomspacer {
+    margin-bottom: 1.5em;
 }
 
 .hero-section .lead {
