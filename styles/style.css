@@ -43,8 +43,58 @@ body{
     
 }
 
+.modalvideo iframe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 0;
+    justify-content: center;
+}
+
+.spaceout {
+    padding-bottom: 1em;
+}
+
+.modalvideo {
+    width:55vw;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.modal-dialog {
+    display: flex;
+    min-width: 60vw;
+}
+
 .modal-body img {
     width: 100%;
+}
+
+.modal-backdrop {
+  background-color: var(--bg-color);
+}
+
+.modal-header {
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+}
+
+.modal-footer {
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+}
+
+.modal-body {
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    background: url(../images/BGWorld.webp);
+    background-size: cover;
+    background-position: top center;
+    background-attachment:fixed;
+}
+
+.btn-close {
+    filter:invert(100%);
 }
 
 .bg-light {
@@ -57,28 +107,36 @@ body{
 
 h2, h3, h4, h5 {
     font-family: 'Play', serif;
-    display:inline;
+    display:block;
 
 }
+
+.headingspacer {
+    margin-top: 1em;
+}
+
 .hero-section .lead {
     font-size: 1.5rem;
 }
 
 .work-card img {
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     border-radius: 0;
-    
+    opacity: 100%;
+
 }
 
 .work-card {
     font-family: 'Cabin', sans-serif;
-    background-color: var(--bg-color);
-    opacity: 0.75;
-    border-radius: 0em;
+    background-color: var(--bg-color2);
+    opacity: 100%;
+    border-radius: 0.5em;
     color: var(--text-color);
     border: none;
-
+    max-width: 50vw;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .card-title {
@@ -94,11 +152,16 @@ h2 {
 .btn {
     background-color: var(--h-color1);
     color: var(--text-color);
-    border-radius: 0em;
+    border-radius: 0.5em;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
     --bs-btn-hover-bg: var(--h-color2);
+}
+
+.btn:hover {
+    transform: translateY(-1px); 
+    transition: all 0.2s ease;
 }
 
 /* NAVBAR */
@@ -133,7 +196,6 @@ nav.navbar {
 
 .navbar {
     --bs-navbar-color: var(--text-color);
-    --bs-navbar-hover-color: var(--h-color1);
     font-family: 'Play', sans-serif;
     --bs-navbar-padding-y: 0rem;
     font-size: x-large;
@@ -155,6 +217,8 @@ nav.navbar {
     filter brightness(1.2);
     transform: translateY(-1px); 
     transition: all 0.2s ease;
+    background-color: var(--h-color2);
+    color:white
 }
 
 .custom-toggler.navbar-toggler {
@@ -185,20 +249,18 @@ nav.navbar {
   height: auto; 
 }
 
+
+
+
 /* Carousel */
 
-.carouselheadervideo iframe {
-    width: 100%;
-    Height: 100%;
-    display: block;
+.carousel-item {
+    width:100%;
 }
 
-.carouselheadervideo {
-    width: 60vw;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
-    margin-bottom: 3em;
-
+.carousel-control-prev {
+    height: 50%;
+    top: 25%; 
 }
 
 /*footer*/
@@ -210,18 +272,19 @@ nav.navbar {
     height: 25vh;
     color: white;
     align-items: center;
-    justify-content: center;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .contactbutton {
     padding: 0.3em;
-
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     background-color: var(--bg-color);
     text-align: center;
-
+    display: inline;
 }
 
 .contactbuttonlightside {
@@ -230,6 +293,39 @@ nav.navbar {
     border-bottom-left-radius: 0.5em;
     background-color: var(--bg-color2);
     text-align: left;
+    display: inline;
+}
+
+.lowercr {
+    justify-content: left;
+    text-align: left;
+    align-items: baseline;
+    font-style: italic;
+    font-size: 0.6em;
+    margin-bottom: 0.4em;
+}
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-link:hover {
+    color: var(--h-color1);
+    
+}
+
+.footer-link:hover .iconinline
+{
+    filter brightness(1.2);
+    transform: translateY(-1px); 
+    transition: all 0.2s ease;
+    fill:#8C6F3A !important;
+  
+}
+
+
+footer div.row {
+    width: 100%;
 }
 
 /*icon*/
@@ -255,28 +351,24 @@ nav.navbar {
     fill: var(--text-color);
 }
 
-.footer-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.footer-link:hover {
-    color: var(--h-color1);
-}
-
-.footer-link:hover .iconinline
-{
-    filter brightness(1.2);
-    transform: translateY(-1px); 
-    transition: all 0.2s ease;
-    fill:#8C6F3A !important;
-  
-}
 .icontext {
     font-size: 24px;  
 }
 
-footer div.row {
-    width: 100%;
+
+
+@media screen and (max-width: 576px) {
+    .modalvideo {
+    width:80vw;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    }
 }
 
+@media screen and (max-width: 1200px) {
+    .work-card {
+        max-width: 100vw;
+    }
+    .card-body {
+    }
+}
