@@ -28,6 +28,7 @@ body{
     background-size: cover;
     background-position: top center;
     background-attachment:fixed;
+    overflow-x: hidden;
 
     
 }
@@ -42,6 +43,24 @@ body{
     color: white;
     
 }
+.minihero {
+    background: url(../images/nordic.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    height:30vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    color: white;
+    
+}
+
+#miniherologo {
+  width: auto; 
+  height: 30vh; 
+  justify-content: center;
+}
+
 
 .modalvideo iframe {
     width: 100%;
@@ -108,11 +127,20 @@ body{
 h2, h3, h4, h5 {
     font-family: 'Play', serif;
     display:block;
+}
 
+h4 {
+    font-style: italic;
+    margin-top: 0em !important;
+    margin-bottom: 1em;
 }
 
 a {
     color: var(--h-color1)
+}
+
+.headingwsubtitle {
+    margin-bottom: 0.0em !important;
 }
 
 a:hover {
@@ -122,7 +150,7 @@ a:hover {
 }
 
 .headingspacer {
-    margin-top: 0.2em;
+    margin-top: 0.4em;
 }
 
 .bottomspacer {
@@ -134,7 +162,7 @@ a:hover {
 }
 
 .work-card img {
-    height: 400px;
+    height: auto;
     object-fit: cover;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
@@ -145,14 +173,15 @@ a:hover {
 .work-card {
     font-family: 'Cabin', sans-serif;
     background-color: var(--bg-color2);
+    color: var(--text-color);
     opacity: 100%;
     border-radius: 0.5em;
-    color: var(--text-color);
     border: none;
-    max-width: 50vw;
+    max-width: 65vw;
     margin: 0 auto;
     
 }
+
 
 .card-title {
     color: var(--text-color);
@@ -264,7 +293,99 @@ nav.navbar {
   height: auto; 
 }
 
+/* Slider */
+/* .gallery-body {
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    background: url(../images/BGWorld.webp);
+    background-size: cover;
+    background-position: top center;
+    background-attachment:fixed;
+    width:100%;
+    height:auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+
+.container-gallery {
+    width: 100%;
+    margin-top: 10vh;
+    padding: 0 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.container-gallery::-webkit-scrollbar {
+    
+}
+
+.container-gallery .wrapper {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+  }  */
+
+
+.gallery-work-card {
+    flex: 0 0 40vw;
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cabin', sans-serif;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    border-radius: 0.6em;
+}
+
+.gallery-work-card .btn {
+    padding: 0.4em 0.8em;
+    width: 100%;
+    margin:0em
+}
+
+.gallery-work-card .card-body {
+    padding: 0.7em;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.align-btn-low {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    max-height: 7.5vh;
+    padding-top: 0em !important;
+}
+
+.gallery-work-card h2 {
+    font-size: 1.0em;
+}
+
+.card-title{
+    justify-self: flex-start;
+}
+
+.gallery-work-card p {
+    font-size: 0.7em;
+}
+
+.gallery-work-card p.card-text {
+    margin-bottom:0.7em
+}
+
+.gallery-work-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+
+}
 
 
 /* Carousel */
@@ -325,7 +446,7 @@ nav.navbar {
 }
 
 .footer-link:hover {
-    color: var(--h-color1);
+    color: var(--h-color2);
     
 }
 
@@ -378,12 +499,27 @@ footer div.row {
     aspect-ratio: 16 / 9;
     margin: 0 auto;
     }
+    #miniherologo {
+    width: 100vw; 
+    height: auto; 
+    justify-content: center;
+}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1080px) {
     .work-card {
         max-width: 100vw;
     }
     .card-body {
     }
+}
+
+@media screen and (min-width: 1080px) {
+
+    .textcontent {
+    max-width: 65vw !important;
+    max-width: 65vw;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
 }
