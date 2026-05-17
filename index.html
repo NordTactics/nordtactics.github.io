@@ -300,18 +300,50 @@
 			</div>
 			
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				$(".modal").on("show.bs.modal", function(e) {
-					var $if = $(e.delegateTarget).find('iframe');
-					var src = $if.attr("src");
-					$if.attr("src", '/empty.html'); // This triggers the reload
-					$if.attr("src", src);
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<script>
+				$(document).ready(function () {
+
+					// Modal iframe reset
+					$(".modal").on("show.bs.modal", function (e) {
+						var $if = $(e.delegateTarget).find('iframe');
+						var src = $if.attr("src");
+						$if.attr("src", '/empty.html');
+						$if.attr("src", src);
+					});
+
+					// Carousel height normalization
+					const cards = document.querySelectorAll('.carousel-item');
+					const carousel = document.querySelector('.carousel-inner');
+
+					if (carousel && cards.length > 0) {
+						const heights = Array.from(cards).map(card => {
+							const isHidden = !card.classList.contains('active');
+
+							if (isHidden) {
+								card.style.display = 'block';
+								card.style.visibility = 'hidden';
+								card.style.position = 'absolute';
+							}
+
+							const height = card.clientHeight;
+
+							if (isHidden) {
+								card.style.display = '';
+								card.style.visibility = '';
+								card.style.position = '';
+							}
+
+							return height;
+						});
+
+						const tallestHeight = Math.max(...heights, 0);
+						carousel.style.minHeight = tallestHeight + 'px';
+					}
+
 				});
-			});
-    </script>
-</body>
+			</script>
+		</body>
 	</body>
 </html>

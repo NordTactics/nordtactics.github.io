@@ -401,6 +401,10 @@ nav.navbar {
 
 /*footer*/
 
+.footernordic .col-md-4 {
+     display: flex;
+}
+
 .footernordic {
     background: url(../images/nordic.webp);
     background-size: cover;
