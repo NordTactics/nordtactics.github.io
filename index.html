@@ -115,8 +115,8 @@
 										<p class="card-text">A historical overview of MACV-SOG combining historical photos and images with cinematic footage from S.O.G. Prairie Fire. Currently displayed at Ft. Campbell, KY.</p>
 										
 									</div>
-									<div class="card-body align-btn-low">
-									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p3DetailsModal">
+									<div class="card-body btn-low">
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p3DetailsModal">
 										View Project
 										</button>
 									</div>
@@ -168,7 +168,8 @@
 								
 								<div class="modalvideo">
 									<iframe class="spaceout" 
-									src="https://www.youtube.com/embed/WcFWVOX9ofk?si=j7NJPGKdG7xYlM5q" 
+									data-src="https://www.youtube.com/embed/WcFWVOX9ofk?si=j7NJPGKdG7xYlM5q" 
+									src=""
 									title="YouTube video player" 
 									frameborder="0" 
 									allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -208,7 +209,10 @@
 							<div class="col-md-8">
 								
 								<div class="modalvideo">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/nj5T0MYm0lQ?si=mM4EMMw5zrp8kwr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									<iframe width="560" height="315" 
+									data-src="https://www.youtube.com/embed/nj5T0MYm0lQ?si=mM4EMMw5zrp8kwr2"
+									src=""
+									title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 								<h2 class="headingspacer">Across The Fence Trailer</h2>
 								<h3>Team Savage S.O.G. Prairie Fire Gamemode Trailer</h3>
 									<p class="bottomspacer">This is an overview trailer of Savage Game Design’s latest game mode for S.O.G. Prairie Fire: Across The Fence. To record the footage, I accompanied our developer team and friends on a mission and used Arma 3’s ‘Bulldozer’ developer camera to capture the team conducting reconnaissance on North Vietnamese forces.
@@ -240,14 +244,17 @@
 								<div class="col-md-8">
 									
 									<div class="modalvideo">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/8CfROBFaedk?si=qZOE0wJO1yUXdnpR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+											<iframe width="560" height="315" 
+											data-src="https://www.youtube.com/embed/8CfROBFaedk?si=qZOE0wJO1yUXdnpR" 
+											src=""
+											title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 										<h2 class="headingspacer">Hall of Heroes Display Video</h2>
 										<h3>Team Savage MACV-SOG Tribute</h3>
 											<p class="bottomspacer">Savage Game Design had the opportunity to contribute to a collaborative effort to create a museum exhibit focused on MACV-SOG, a highly-classified unit that conducted incredibly dangerous operations during the Vietnam War and pioneered many tactics, techniques, and procedures that would reach decades into the future of Special Operations history. 
 											<br/><br/>My role within the project was to help produce and narrate the video components of the display. I adapted our original release trailer for S.O.G. Prairie Fire, filmed and edited by the legendary FlawlessWarGamer, into a historical overview of MACV-SOG, revising the copy, adding new narration, using photos and video provided by our veteran friends, adding footage from our podcasts with veterans, and including historical videos from the national archives. 
 											<br/><br/>The intent was to help currently serving Special Forces soldiers understand the history and legacy of MACV-SOG. The video is displayed at the Hall of Heroes at Fort Campbell, home of the 5th Special Forces Group. I combined elements from our video game trailer with gameplay footage, historical footage, and audio elements to complete this project.
 											<br/><br/>The display was a team effort, with contributions from many SOG Veterans, the Special Operations Association, the JFK Special Warfare Museum, USASOC and 5th SFG historians, Team Savage, and the Modern Forces Living History group. 
-											<br/><br/>You can view the display's unveiling <a href="https://youtu.be/5sn6qmn6m1M?si=hHsdT7SvYc6leSl2">here</a>.
+											<br/><br/>You can view the display's unveiling <a href="https://youtu.be/5sn6qmn6m1M?si=hHsdT7SvYc6leSl2" target="_blank" rel="noopener noreferrer">here</a>.
 												<br/>
 										</p>
 									</div>
@@ -305,12 +312,18 @@
 			<script>
 				$(document).ready(function () {
 
-					// Modal iframe reset
-					$(".modal").on("show.bs.modal", function (e) {
-						var $if = $(e.delegateTarget).find('iframe');
-						var src = $if.attr("src");
-						$if.attr("src", '/empty.html');
-						$if.attr("src", src);
+					$(".modal").on("show.bs.modal", function () {
+						var $if = $(this).find('iframe');
+						var src = $if.attr("data-src");
+
+						if ($if.attr("src") !== src) {
+							$if.attr("src", src);
+						}
+					});
+
+					$(".modal").on("hidden.bs.modal", function () {
+						var $if = $(this).find('iframe');
+						$if.attr("src", "");
 					});
 
 					// Carousel height normalization
@@ -341,7 +354,7 @@
 						const tallestHeight = Math.max(...heights, 0);
 						carousel.style.minHeight = tallestHeight + 'px';
 					}
-
+					
 				});
 			</script>
 		</body>

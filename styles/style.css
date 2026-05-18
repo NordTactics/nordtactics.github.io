@@ -24,10 +24,7 @@
 body{
     background-color: var(--bg-color2);
     color: var(--text-color);
-    background: url(../images/BGWorld.webp);
-    background-size: cover;
-    background-position: top center;
-    background-attachment:fixed;
+
     overflow-x: hidden;
 
     
@@ -46,7 +43,7 @@ body{
 .minihero {
     background: url(../images/nordic.webp);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 63%;
     height:30vh;
     display: flex;
     align-items: left;
@@ -61,6 +58,12 @@ body{
   justify-content: center;
 }
 
+.modal-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 
 .modalvideo iframe {
     width: 100%;
@@ -72,6 +75,24 @@ body{
 
 .spaceout {
     padding-bottom: 1em;
+}
+
+html {
+    scrollbar-gutter: stable;
+    background-color: var(--bg-color2);
+    background: url(../images/BGWorld.webp);
+    background-size: cover;
+    background-position: top center;
+    background-attachment:fixed;
+}
+
+body {
+    background-attachment: fixed;
+    background: transparent;
+}
+
+body.modal-open {
+    padding-right: 0 !important;
 }
 
 .modalvideo {
@@ -104,12 +125,13 @@ body{
 }
 
 .modal-body {
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color);
     color: var(--text-color);
-    background: url(../images/BGWorld.webp);
+    /* background: url(../images/BGWorld.webp); */
     background-size: cover;
     background-position: top center;
     background-attachment:fixed;
+    background-blend-mode: multiply;
 }
 
 .btn-close {
@@ -228,6 +250,7 @@ h2 {
     transition: all 0.2s ease;
     color:white;
     
+    
 }
 
 nav.navbar {
@@ -328,6 +351,10 @@ nav.navbar {
     gap: 1rem;
     width: max-content;
   }  */
+
+.rowgap {
+    margin-bottom: 3vh;
+}
 
 
 .gallery-work-card {
