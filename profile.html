@@ -1,30 +1,513 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 	<head>
+		<link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Your Name Page</title>
+		<meta name="description" content="Voice Actor, artist, historical enthusiast who is passionate about storytelling and authenticity. Currently a member of Team Savage.">
+
+		<title>Sam Eriksson</title>
 
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+		<meta property="og:image" content="https://nordtactics.github.io/images/thumbnail.webp">
+
 		<link href="./styles/style.css" rel="stylesheet">
-	</head>
+
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
 	
 	<body>
+		
 
-		<!-- site content goes between here -->
+		<!-- Hero Section -->
+		<section id="" class="minihero">
+			<div class="container h-40 d-flex align-items-left">
+				<div class="text-center text-white">
+					<img id="miniherologo" src="images/logoheader.webp"/>
+					<!--<p class="lead mb-4">Crafting beautiful digital experiences</p>-->
+				</div>
+			</div>
+		</section>
+		<!-- Navigation -->
+		<div class="container-fluid sticky-top navcontainer">
+			<img id="colorbar" src="images/colorbar.webp"></img>
 
-		<div class="container py-5">
-                <h1>hello!</h1>
-                <p>Welcome to [your name here]'s website.</p>
+			<nav class="navbar navbar-expand-md navbar-dark justify-content-center sticky-top">
+				
+				<div class="container">
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+								</button>
+
+							<div class="collapse navbar-collapse" id="navbarNav">								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">HEADQUARTERS</a>
+									</li>
+									<li class="nav-item">
+										<a href="profile.html" class="nav-link selected" href="#">PROFILE</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="videogallery.html">VIDEO</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link" href="designgallery.html">DESIGN</a>
+									</li>
+
+									<li class="nav-item" href="#work">
+										<a class="nav-link" href="voicework.html">VOICE WORK</a>
+									</li>
+									<li class="nav-item" href="#work">
+										<a class="nav-link" href="fun.html">FUN STUFF</a>
+									</li>
+								</ul>
+							</div>
+					
+
+				</div>
+			</nav>
+	        <img id="colorbar" src="images/colorbar.webp"></img>
+
 		</div>
 
-        <!-- and here -->
+		<!-- Content -->
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
+			<!--KEEP Work Section -->
+		<section id="work" class="py-5 sans-serif">
+			<div class="container">
+				<h2 class="headingwsubtitle animate__animated animate__fadeInUp">SELECTED WORKS</h2>
+				<h4 class="animate__animated animate__fadeInUp">I am grateful to have had many opportunities to work on some exciting projects over the past few years. Below are some of my featured examples of work I would like to share!</h2>
+
+				<div class="row rowgap g-4">
+					<!--KEEP Work 1 -->
+					<div class="col-md-3">
+						<div class="card h-100 gallery-work-card m-auto">
+							<img class="thumbnail" src="images/thumbs/woody.webp">
+								<div class="card-body">
+									<h2 class="card-title">Cobra Pilot Reacts to audio of his own mission | Team Savage Podcast</h2>
+									<p class="card-text">Join CW3 Woody Woodard as he breaks down moment-to-moment his experiences flying a white-knuckle mission to rescue two MACV-SOG recon teams in peril in January 1971.</p>
+									
+								</div>
+								<div class="card-body align-btn-low">
+									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p1DetailsModal">
+										View Project
+										</button>
+								</div>
+						</div>
+					</div>
+
+					<!--KEEP Work 2 -->
+					<div class="col-md-3">
+						<div class="card h-100 gallery-work-card m-auto">
+								<img class="thumbnail" src="images/thumbs/mwmo.webp">
+									<div class="card-body">
+										<h2 class="card-title">MWMO Motion Graphics</h2>
+										<p class="card-text">Multiple animations I made for the Mississippi Watershed Management Organization, including of their logo and lower thirds. Motion graphics are one of my favorite types of work!</p>
+									</div>
+									<div class="card-body align-btn-low">
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p2DetailsModal">
+											View Project
+											</button>
+									</div>
+							</div>
+					</div>
+
+					<!--KEEP Work 3 -->
+					<div class="col-md-3">
+						<div class="card h-100 gallery-work-card m-auto">
+							<img src="images/thumbs/pfs.webp">
+							<div class="card-body">
+								<h2 class="card-title">Title Sequence | Team Savage Prairie Fire Stories</h2>
+								<p class="card-text">Title sequence for Vietnam War interview series - complete with motion graphics animations, music from S.O.G. Prairie Fire, and historical footage.</p>
+							</div>
+							<div class="card-body align-btn-low">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p7DetailsModal">
+									View Project
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!--KEEP Work 4 -->
+					<div class="col-md-3">
+						<div class="card h-100 gallery-work-card m-auto">
+							<img src="images/thumbs/bob.webp">
+							<div class="card-body">
+								<h2 class="card-title">Col. Bob Killebrew Interview - MACV-SOG | Team Savage</h2>
+								<p class="card-text">A rare firsthand account from Bob Killebrew offers an inside look at the legend of Jerry “Mad Dog” Shriver and the realities of MACV-SOG operations in Vietnam.</p>
+							</div>
+							<div class="card-body align-btn-low">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p6DetailsModal">
+									View Project
+								</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row g-4">
+					<!-- Work 5 -->
+					<div class="col-md-3">
+						<div class="card h-100 gallery-work-card m-auto">
+							<img src="images/thumbs/cd1.webp">
+							<div class="card-body">
+								<h2 class="card-title">SOG Codename Dynamite, Book 1 | MACV-SOG Audiobook</h2>
+								<p class="card-text">Written by Henry L. (Dick) Thompson, Phd., this audiobook memoir takes listeners on a journey through the true experiences of Lt. Dick Thompson as he takes on highly classified, highly dangerous missions in Laos and Vietnam. Narrated by Sam Eriksson.</p>
+							</div>
+							<div class="card-body align-btn-low">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p5DetailsModal">
+									View Project
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- Work 6 -->
+									
+					</div>	
+
+			</div>
+			<div class="row g-4">
+				<div class="col-md-3">
+			
+					<br/>
+			<!-- Modal Project 1 Details-->
+			<div class="modal fade" id="p1DetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body  justify-content-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+								
+								<div class="modalvideo">
+									<iframe class="spaceout" 
+									data-src="https://www.youtube.com/embed/WcFWVOX9ofk?si=j7NJPGKdG7xYlM5q" 
+									src=""
+									title="YouTube video player" 
+									frameborder="0" 
+									allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+									</iframe>	
+								<h2 class="headingspacer">Cobra Pilot Reacts to audio of his own mission</h2>
+								<h3>Team Savage Archival Audio Project</h3>
+									<p class="bottomspacer">Of all the projects I have worked on with Team Savage, this is one of the most meaningful I have had the opportunity to be part of. Several summers ago, I undertook the task of transcribing a chaotic and lengthy audio recording of a top secret combat mission in Laos conducted by members of MACV-SOG. I began this independently in my free time, with only limited background from articles and a podcast featuring John Plaster, who served as a Covey rider on the mission.
+									<br/><br/>In this role, he operated from the back seat of a forward air controller OV-10 Bronco, helping coordinate air support for two reconnaissance teams on the ground deep in enemy territory. The mission was highly unusual. Two separate teams, miles apart, were compromised at the same time. Plaster and his pilot, Mike Cryer, alongside supporting elements flying A-1 Skyraider, UH-1 Huey helicopters from the 57th Assault Helicopter Company, and AH-1G Cobra gunships from the 361st Aerial Weapons Company, worked to hold off a large enemy force long enough to extract both teams.
+									<br/><br/>Early in the engagement, David “Lurch” Mixter of Recon Team Colorado was killed when an NVA rocket struck him after he pushed teammate Lyn St. Laurent to the ground, saving his life.
+									<br/><br/>A tape like this is exceedingly rare, as the nature of SOG operations prevented any photographs or recordings of this nature. Still, some crew members on board a 57th AHC helicopter let the tapes roll as the battle raged in the air and on the ground. Team Savage received our copy from Barry Lewis Subelsky, and our audio engineer Dennis Kahl cleaned up the tape. We received permission from Plaster to include the recordings in our video game, S.O.G. Prairie Fire, as a way to connect players to the history and the real men who ran these missions. 
+									<br/><br/>The transcription process itself was demanding. The recording captured multiple overlapping radio transmissions with little context. I spent the summer listening repeatedly, working to identify voices, terminology, and the evolving battlefield situation. I received invaluable support from my friend and MACV-SOG veteran Don Haase, a former Huey crew chief, who helped interpret difficult segments and clarify operational details.
+									<br/><br/>Years later, at a SOG reunion, I spoke with Colonel Barry Pencek, who connected me with Chief Warrant Officer 3 Woody Woodard, a Cobra pilot who had flown on the mission with the 361st in January 1971. After reaching out, Woody confirmed his involvement and invited me and our film specialist Paul Hildebrandt to his home. We spent an afternoon recording an interview and reviewing the original audio together. He was exceptionally generous with his time and insight, offering a deeper understanding of the air operations that shaped the mission.
+									<br/><br/>Woody sadly passed away not long after, and this video was released in his honor. This project is intended to preserve and share the experiences of the aviators and recon teams involved, and to ensure their actions and sacrifices are remembered. I edited and assembled the footage from the interview and archival audio into the final piece, which we released on the Savage Game Design YouTube channel. We later had the opportunity to meet with Lyn St. Laurent for a similar recording, which is currently in production.
+									<br/><br/>The technical elements of this project included preparing files and synchronizing a scrolling text transcript with the tape audio, setting up an audio interface, microphones, headphones, and recording equipment. Paul handled the camera work. I recorded the audio of our podcast to multiple storage devices to ensure we had a backup in case of any point of failure. The podcast is primarily intended for historical enthusiasts, but is also intended to help bring Vietnam War History to players of the S.O.G. Prairie Fire game. 
+								</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+			</div>		
+			<!-- Modal Project 2 Details-->
+			<div class="modal fade" id="p2DetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body  justify-content-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+								
+								<div class="modalvideo">
+									<iframe class="spaceout" 
+									data-src="https://www.youtube.com/embed/uAaUpKsoywY?si=wd_ZG6QOwRN1ZAht" 
+									src=""
+									title="YouTube video player" 
+									frameborder="0" 
+									allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+									</iframe>	
+								<h2 class="headingspacer">MWMO Motion Graphics</h2>
+								<h3>A demo of multiple animations I made for the Mississippi Watershed Management Organization, including of their logo and lower thirds.</h3>
+									<p class="bottomspacer">This project was a fitting application for the motion graphics course I took at school. The Mississippi Watershed Management Organization, which manages the watershed around much of the Twin Cities area, had recently undergone a brand refresh and needed reusable, dynamic assets for future media production.
+										<br/><br/>Motion graphics are a great way to create visually appealing media while also helping the audience understand and retain information.
+										<br/><br/>We identified a need for video end cards that could tie together the beginnings and endings of MWMO short and long form videos. The new MWMO logo was a strong foundation for this because it is memorable, clearly identifiable, and built from clean visual elements with minimal overlap.
+										<br/><br/>We also identified a need for lower thirds to help audiences understand information presented in video form. Accessibility is especially important for government organizations, so these animations needed to be simple, clean, and easy to read. The lower thirds could define specialized terms for viewers while also identifying key personnel and their job titles.
+										<br/><br/>This focus on accessibility allows video productions to have a greater reach. Since a large portion of the target audience of Twin Cities residents may not have a background in environmental science more easily understand the information presented in these videos. 
+									</p>
+
+									<div class="modal-body">
+										<img src="images/anims/lowerthirdsstoryboard.webp" class="modal-img" alt="">
+									</div>	
+
+									<div class="modal-body">
+										<img src="images/anims/taglinestoryboard.webp" class="modal-img" alt="">
+									</div>	
+
+									<p class="bottomspacer">
+										I started with a series of storyboard sketches, which eventually evolved into the final animation package. For the tagline and text animation in the end cards, I used the speed graph functionality in Adobe After Effects to create a smooth sliding effect.
+										<br/><br/>The result is a smooth, professional <a href="https://www.youtube.com/watch?v=uAaUpKsoywY" target="blank">animation package</a> that helps unify MWMO video content under a consistent visual identity.
+																			<br/><br/>These animations were successfully used in several video productions made by classmates, and they are modularly set up as Premiere Pro motion graphics templates so the client can use them in future projects as well. 
+
+									</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Project 5 Details-->
+			<div class="modal fade" id="p5DetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body  justify-content-center">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									
+									<div class="modalvideo">
+											<div class="modal-body">
+   												<img src="images/cd1full.webp" class="modal-img" alt="">
+											</div>						
+										<h2 class="headingspacer">SOG Codename Dynamite, Book 1 | MACV-SOG Audiobook</h2>
+										<h3>Written by Henry L. (Dick) Thompson, Phd.</h3>
+											<p class="bottomspacer">SOG history is a deep passion of mine, so when I was given the opportunity to help Lieutenant Colonel Dick Thompson bring his legendary book, <a href="https://www.audible.com/pd/SOG-Codename-Dynamite-Book-1-Audiobook/B0G54DCS2Z" target="blank"><em>SOG Codename Dynamite: A MACV-SOG 1-0's Personal Journal</em></a>, to audiobook format, I was beyond honored. This was my first major audiobook project, and I wanted to provide the highest quality narration and performance possible for the many passionate listeners who care deeply about SOG history, especially the veterans whose stories are told in this book, including those who are no longer with us.
+											<br/><br/>I came into this project with several years of SOG history research, along with firsthand experience getting to know SOG veterans at reunions each year. I had also previously worked on SOG voice acting for the <em>S.O.G. Prairie Fire</em> video game, which helped inform my approach to tone, authenticity, and delivery. As an avid listener of SOG audiobooks myself, I have noticed some performances, while otherwise fantastic, have understandably struggled with proper pronunciation of many of the specialized terms associated with MACV-SOG, the military, and the Vietnam War. I was fortunate to be able to leverage my military experience, SOG history prior knowledge, and other resources to help aid in authentic delivery. I put every ounce of passion I have for Vietnam War and Special Operations history into this performance.
+											<br/><br/>As for the technical side, this was the most ambitious audio project I have ever taken on. It was an incredible opportunity to learn everything from setting up Reaper as a digital audio workstation for punch and roll recording, to building a proper home studio environment that reduced reverb and created a better listening experience for the audience. I utilized an audio interface and condenser microphone for this project.
+											<br/><br/>I also learned a great deal about post production, including applying plugins from the iZotope series, editing out plosives, clicks, and other unwanted sounds, and maintaining consistent quality throughout the full audiobook. The final mastering was done by my good friend Dennis Kahl, also known as Lord Jarhead, who created much of the audio for the <em>S.O.G. Prairie Fire</em> video game and is well known in the Arma community for his JSRS sound mod. 
+											Dennis also provided invaluable technical advice for the project. I am very grateful for his insight!
+											<br/><br/>The performance itself was one of the greatest learning opportunities I have had as a voice actor. I had the opportunity to really dial in the narration so that it captured the story with authenticity and respect for the history behind it, while also bringing out Dick Thompson’s dry humor and the intensity of the combat segments.
+											<br/><br/>This book covers some dark, emotionally heavy, and sometimes graphic content that exemplifies raw survival mindset of a soldier at war. The combat segments were especially intense to narrate. Dick encouraged me to help convey what these warriors experienced on the ground, and what it was like to communicate with support assets during life or death situations against overwhelming enemy forces. His writing is gripping, raw, and hard hitting. His experiences show the almost unbelievable reality SOG operators faced every day. For them, it was just another day in SOG.
+											<br/><br/>Dick gave me explicit instructions to turn up the intensity and volume during SOG Prairie Fire emergencies to help convey the chaos and urgency of those moments. I did my best to bring that intensity into the performance while still honoring the men and the history behind the book.
+											<br/><br/><em>Codename Dynamite, Book 1</em> is raw, real, and does not hold back. As Dick says, this book is not for the faint of heart. I recorded the performance with an audience of historical enthusiasts interested in the Vietnam War and Special Operations. It was a great honor to be part of this project, and I look forward to taking on future audiobook work.</p>
+											<div class="modal-body">
+   													<div class="project-link-card">
+														<a href="https://www.audible.com/pd/SOG-Codename-Dynamite-Book-1-Audiobook/B0G54DCS2Z" target="_blank" rel="noopener"><em>SOG Codename Dynamite</em> is available on Audible. </a>
+													</div>
+											</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- Modal Project 6 Details-->
+			<div class="modal fade" id="p6DetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body  justify-content-center">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									
+									<div class="modalvideo">
+										<iframe width="560" height="315" data-src="https://www.youtube.com/embed/lcCEp3kOCl8?si=NYhXFCl91g1Iw0Wu" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>										
+										<h2 class="headingspacer">Col. Bob Killebrew Interview - MACV-SOG | Team Savage</h2>
+										<h3>Interview with MACV-SOG Veteran Bob Killebrew</h3>
+											<p class="bottomspacer">As part of my historical work with Savage Game Design, I have had the opportunity to speak with veterans and help share their stories with a wider audience. Through our advisor Ken Bowra, we were connected with Bob Killebrew, whom I had the privilege of interviewing.
+												<br/><br/>One of the most well known figures in MACV-SOG history is Jerry “Mad Dog” Shriver. Known for his intensity, fieldcraft, and deep connection with his Montagnard teammates, Shriver became a legendary figure after disappearing on a mission and never being recovered.
+												<br/><br/>Colonel Killebrew served alongside Shriver and used this interview to share personal stories and reflections from that time. His perspective provides a rare firsthand window into the culture, relationships, and operational realities of SOG, as well as a more human understanding of one of its most enduring and mysterious figures. It was a unique opportunity to help document these experiences and a privilege to spend time hearing them directly.
+												<br/><br/>Technical specifications: I screen-captured this video using Zoom and OBS, then edited it with Premiere Pro. I also planned the interview questions beforehand. The podcast is primarily intended for historical enthusiasts, but is also intended to help bring Vietnam War History to players of the S.O.G. Prairie Fire game.
+
+											</p>
+									</div>
+
+
+								</div>	
+							</div>
+						</div>
+					</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Project 7 Details-->
+			<div class="modal fade" id="p7DetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body  justify-content-center">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									
+									<div class="modalvideo">
+										<iframe width="560" height="315" data-src="https://www.youtube.com/embed/lcCEp3kOCl8?si=NYhXFCl91g1Iw0Wu" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>										
+										<h2 class="headingspacer">S.O.G. Prairie Fire Stories Title Sequence | Team Savage</h2>
+										<h3>Motion graphics title sequence project</h3>
+											<p class="bottomspacer">
+											<p><em>S.O.G. Prairie Fire Stories</em> is a series of podcast-style interviews featuring Vietnam War Special Operations veterans. I helped plan and host the series alongside Team Savage CEO Rob Graham. In late 2025, I storyboarded and produced a title sequence using Adobe After Effects and Adobe Premiere Pro.</p>
+
+											<p>The sequence incorporates historical footage from the National Archives, as well as footage captured by S.O.G. Prairie Fire veteran advisors Don Haase and Jim Shorten-Jones during their service. It also includes music from the game’s soundtrack and historical maps from the University of Texas Libraries. Radio communications used in the sequence are authentic recordings from pilot Ray Belz and a January 1971 tape provided by John Plaster and Barry Subelsky.</p>
+
+											<p>My process began with detailed storyboarding, with a focus on capturing the visual tone of the Vietnam War era. The goal was to help audiences better connect the stories shared in the podcast with the historical reality of the conflict.</p>
+
+											<p>I utilized keyframed animation techniques to mask and modify elements, applying motion, texture, and synchronization with the music track to create a cohesive sequence.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/character.webp" class="modal-img" alt="">
+												</div>	
+											<p>The sequence features a <a href="https://youtube.com/shorts/YKabjWhBIvA?si=sQhMjIO7h29Q776y" target="_blank" rel="noopener noreferrer">rigged character</a> based on the Team Savage logo. Starting from a layered Adobe Photoshop file, I separated elements into individual layers within After Effects. I then animated the logo to expand outward into a shellburst effect, with the monitor entering from the left and being crushed by the skull. I revealed the cracking effect by keyframing a mask path. Motion was refined using custom-timed keyframes, allowing elements to slightly overshoot and settle into place to simulate weight and realism.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/realstories.webp" class="modal-img" alt="">
+												</div>	
+											<p>The “REAL STORIES” stencil sequence was the most technically complex portion, requiring multiple layers and precompositions to properly render textures and effects. To achieve an authentic look, I recorded spray paint strokes in Photoshop and integrated that footage into the composition.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/redact.webp" class="modal-img" alt="">
+												</div>	
+											<p>The 3D “REDACTED” map sequence reflects the classified nature of MACV-SOG operations. Personnel involved in these missions were restricted from discussing them for decades. I used a CIA Atlas map from the University of Texas Libraries and keyframed 3D camera movements to create depth and motion. I also recorded custom marker sound effects and synchronized them and public domain typewriter audio with the animations. I used a screencapture of photoshop brushes to create the marker animations, then used a Luma key to remove the white photoshop canvas.</p>
+												<div class="modal-body">
+   													 <img src="images/thumbs/pfs.webp" class="modal-img" alt="">
+												</div>	
+											<p>The archival footage includes a range of sources, such as ranger patrols and equipment demonstrations. Two sequences stand out as authentic MACV-SOG footage: the Marble Mountain footage by Jim Shorten-Jones and the “string” extraction footage by Don Haase, featuring a SOG team being extracted on ropes hanging from a UH-1H helicopter.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/mm.webp" class="modal-img" alt="">
+												</div>			
+											<p>For the Marble Mountain segment, I created a hand-drawn illustration inspired by period news program visuals. I photographed the drawing, inverted the colors in After Effects, and applied a luma key to isolate the image. A looping turbulent displace randomized motion expression was added to replicate the subtle movement seen in period overlays.</p>
+													<div class="modal-body">
+   													 <img src="images/titlesequence/mm2.webp" class="modal-img" alt="">
+												</div>	
+											<p>The soundtrack required custom editing to achieve the desired pacing. I spliced sections of “Fire in the Sky” from the <em>S.O.G. Prairie Fire</em> soundtrack by aligning cuts with audio transients, allowing for a natural flow while preserving the intended tone. The track, created by originalsas, has also been used in other productions by our team.</p>
+											<p>I was pleased with the <a href="https://www.youtube.com/watch?v=q7Fl3dmFK8E&feature=youtu.be" target="_blank" rel="noopener noreferrer" >final product</a>! It may still see further modifications for future iterations.</p>
+										</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<img id="colorbar" src="images/colorbar.webp"></img>
+
+		<footer>
+			<div class="container-fluid footernordic">
+				<div class="row ">
+					<div class="col-md-8"><p></p></div>
+					<div class="col-md-4">
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-md-8"></div>
+					<div class="col-md-4">
+						<h2 class="contactbuttonlightside">CONTACT!</h2>
+						<h2 class="contactbutton">
+							<a href="https://x.com/NordTactics" target="_blank" class="footer-link">
+								<!-- <img class=iconinline src="icons/bx-twitter-x.svg"> -->
+								 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"class="iconinline"><g fill="currentColor"><!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="M13.68 10.62 20.24 3h-1.55L13 9.62 8.45 3H3.19l6.88 10.01L3.19 21h1.55l6.01-6.99 4.8 6.99h5.24l-7.13-10.38Zm-2.13 2.47-.7-1-5.54-7.93H7.7l4.47 6.4.7 1 5.82 8.32H16.3z"></path></g></svg>
+							</a>
+							<!-- <a href="mailto:nordtacticsnwg@gmail.com">
+								<img class=iconinline src="icons/bx-gmail.svg">
+							</a> -->
+							<a href="mailto:nordtacticsnwg@gmail.com" target="_blank" class="footer-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="iconinline"><g fill="currentColor"><!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64"></path></g></svg>								</a>
+						</h2>
+					</div>
+				</div>
+				<div class="row h-40 ">
+					
+				</div>
+				<div class="row align-items-end">
+					<div class="col-md-12">
+						<p class="d-flex align-self-end lowercr">&copy Sam Eriksson 2026. All content on this site, including referenced materials, is protected by applicable copyright laws and may not be copied, reproduced, distributed, modified, or used to create derivative works or for training artificial intelligence or machine learning systems without prior written permission from the author.</p>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+				$(document).ready(function () {
+
+					$(".modal").on("show.bs.modal", function () {
+						var $if = $(this).find('iframe');
+						var src = $if.attr("data-src");
+
+						if ($if.attr("src") !== src) {
+							$if.attr("src", src);
+						}
+					});
+
+					$(".modal").on("hidden.bs.modal", function () {
+						var $if = $(this).find('iframe');
+						$if.attr("src", "");
+					});
+
+					// Carousel height normalization
+					const cards = document.querySelectorAll('.carousel-item');
+					const carousel = document.querySelector('.carousel-inner');
+
+					if (carousel && cards.length > 0) {
+						const heights = Array.from(cards).map(card => {
+							const isHidden = !card.classList.contains('active');
+
+							if (isHidden) {
+								card.style.display = 'block';
+								card.style.visibility = 'hidden';
+								card.style.position = 'absolute';
+							}
+
+							const height = card.clientHeight;
+
+							if (isHidden) {
+								card.style.display = '';
+								card.style.visibility = '';
+								card.style.position = '';
+							}
+
+							return height;
+						});
+
+						const tallestHeight = Math.max(...heights, 0);
+						carousel.style.minHeight = tallestHeight + 'px';
+					}
+					
+				});
+			</script>
+</body>
 	</body>
 </html>

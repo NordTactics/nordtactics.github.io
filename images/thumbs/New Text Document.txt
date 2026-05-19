@@ -1,0 +1,51 @@
+<div class="modalvideo">
+										<iframe width="560" height="315" data-src="https://www.youtube.com/embed/lcCEp3kOCl8?si=NYhXFCl91g1Iw0Wu" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>										
+										<h2 class="headingspacer">Col. Bob Killebrew Interview - MACV-SOG | Team Savage</h2>
+										<h3>Interview with MACV-SOG Veteran Bob Killebrew</h3>
+											<p class="bottomspacer">As part of my historical work with Savage Game Design, I have had the opportunity to speak with veterans and help share their stories with a wider audience. Through our advisor Ken Bowra, we were connected with Bob Killebrew, whom I had the privilege of interviewing.
+												<br/><br/>One of the most well known figures in MACV-SOG history is Jerry “Mad Dog” Shriver. Known for his intensity, fieldcraft, and deep connection with his Montagnard teammates, Shriver became a legendary figure after disappearing on a mission and never being recovered.
+												<br/><br/>Colonel Killebrew served alongside Shriver and used this interview to share personal stories and reflections from that time. His perspective provides a rare firsthand window into the culture, relationships, and operational realities of SOG, as well as a more human understanding of one of its most enduring and mysterious figures. It was a unique opportunity to help document these experiences and a privilege to spend time hearing them directly.
+												<br/><br/>Technical specifications: I screen-captured this video using Zoom and OBS, then edited it with Premiere Pro. I also planned the interview questions beforehand. 
+
+											</p>
+									</div>
+
+<div class="modalvideo">
+										<iframe width="560" height="315" data-src="https://www.youtube.com/embed/lcCEp3kOCl8?si=NYhXFCl91g1Iw0Wu" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>										
+										<h2 class="headingspacer">S.O.G. Prairie Fire Stories Title Sequence | Team Savage</h2>
+										<h3>Motion graphics title sequence project</h3>
+											<p class="bottomspacer">
+											<p><em>S.O.G. Prairie Fire Stories</em> is a series of podcast-style interviews featuring Vietnam War Special Operations veterans. I helped plan and host the series alongside Team Savage CEO Rob Graham. In late 2025, I storyboarded and produced a title sequence using Adobe After Effects and Adobe Premiere Pro.</p>
+
+											<p>The sequence incorporates historical footage from the National Archives, as well as footage captured by S.O.G. Prairie Fire veteran advisors Don Haase and Jim Shorten-Jones during their service. It also includes music from the game’s soundtrack and historical maps from the University of Texas Libraries. Radio communications used in the sequence are authentic recordings from pilot Ray Belz and a January 1971 tape provided by John Plaster and Barry Subelsky.</p>
+
+											<p>My process began with detailed storyboarding, with a focus on capturing the visual tone of the Vietnam War era. The goal was to help audiences better connect the stories shared in the podcast with the historical reality of the conflict.</p>
+
+											<p>I utilized keyframed animation techniques to mask and modify elements, applying motion, texture, and synchronization with the music track to create a cohesive sequence.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/character.webp" class="modal-img" alt="">
+												</div>	
+											<p>The sequence features a <a href="https://youtube.com/shorts/YKabjWhBIvA?si=sQhMjIO7h29Q776y" target="_blank" rel="noopener noreferrer">rigged character</a> based on the Team Savage logo. Starting from a layered Adobe Photoshop file, I separated elements into individual layers within After Effects. I then animated the logo to expand outward into a shellburst effect, with the monitor entering from the left and being crushed by the skull. I revealed the cracking effect by keyframing a mask path. Motion was refined using custom-timed keyframes, allowing elements to slightly overshoot and settle into place to simulate weight and realism.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/realstories.webp" class="modal-img" alt="">
+												</div>	
+											<p>The “REAL STORIES” stencil sequence was the most technically complex portion, requiring multiple layers and precompositions to properly render textures and effects. To achieve an authentic look, I recorded spray paint strokes in Photoshop and integrated that footage into the composition.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/redact.webp" class="modal-img" alt="">
+												</div>	
+											<p>The 3D “REDACTED” map sequence reflects the classified nature of MACV-SOG operations. Personnel involved in these missions were restricted from discussing them for decades. I used a CIA Atlas map from the University of Texas Libraries and keyframed 3D camera movements to create depth and motion. I also recorded custom marker sound effects and synchronized them and public domain typewriter audio with the animations. I used a screencapture of photoshop brushes to create the marker animations, then used a Luma key to remove the white photoshop canvas.</p>
+												<div class="modal-body">
+   													 <img src="images/thumbs/pfs.webp" class="modal-img" alt="">
+												</div>	
+											<p>The archival footage includes a range of sources, such as ranger patrols and equipment demonstrations. Two sequences stand out as authentic MACV-SOG footage: the Marble Mountain footage by Jim Shorten-Jones and the “string” extraction footage by Don Haase, featuring a SOG team being extracted on ropes hanging from a UH-1H helicopter.</p>
+												<div class="modal-body">
+   													 <img src="images/titlesequence/mm.webp" class="modal-img" alt="">
+												</div>			
+											<p>For the Marble Mountain segment, I created a hand-drawn illustration inspired by period news program visuals. I photographed the drawing, inverted the colors in After Effects, and applied a luma key to isolate the image. A looping turbulent displace randomized motion expression was added to replicate the subtle movement seen in period overlays.</p>
+													<div class="modal-body">
+   													 <img src="images/titlesequence/mm2.webp" class="modal-img" alt="">
+												</div>	
+											<p>The soundtrack required custom editing to achieve the desired pacing. I spliced sections of “Fire in the Sky” from the <em>S.O.G. Prairie Fire</em> soundtrack by aligning cuts with audio transients, allowing for a natural flow while preserving the intended tone. The track, created by originalsas, has also been used in other productions by our team.</p>
+											<p>I was pleased with the <a href="https://www.youtube.com/watch?v=q7Fl3dmFK8E&feature=youtu.be" target="_blank" rel="noopener noreferrer" >final product</a>! It may still see further modifications for future iterations.</p>
+										</p>
+									</div>
