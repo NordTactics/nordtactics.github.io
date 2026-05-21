@@ -204,6 +204,12 @@ a:hover {
     
 }
 
+.collapse-card {
+    font-family: 'Cabin', sans-serif;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+}
+
 
 .card-title {
     color: var(--text-color);
