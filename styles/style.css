@@ -65,6 +65,22 @@ body{
     margin: 0 auto;
 }
 
+.fun-img {
+    display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.funrow {
+    background-color: var(--bg-color2);
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
 .sam-img {
     display: block;
     max-width: 100%;
@@ -597,6 +613,9 @@ footer div.row {
     display: flex;
     flex-direction: column;
 }
+    .hidemobile {
+        font-size:0.6em;
+    }
 }
 
 @media screen and (max-width: 1080px) {
